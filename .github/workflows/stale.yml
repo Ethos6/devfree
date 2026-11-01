@@ -1,0 +1,32 @@
+name: Freshness check
+
+on:
+  schedule:
+    - cron: '41 5 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm run stale -- --days 180 --report report.md
+      - name: Open or update the re-check issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if grep -q '^0 entries' report.md; then echo "Nothing to re-check"; exit 0; fi
+          existing=$(gh issue list --label needs-recheck --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue edit "$existing" --body-file report.md
+          else
+            gh label create needs-recheck --color fbca04 --description "Free tier not verified recently" 2>/dev/null || true
+            gh issue create --title "Free tiers to re-check" --label needs-recheck --body-file report.md
+          fi

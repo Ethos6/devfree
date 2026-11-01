@@ -1,0 +1,23 @@
+name: Checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate data and check README is generated
+        run: npm run check
+      - name: Check links of changed entries
+        if: github.event_name == 'pull_request'
+        run: npm run links -- --report link-report.md || echo "::warning::Some links failed, see the job log"
