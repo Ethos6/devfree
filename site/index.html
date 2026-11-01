@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>devfree: free tiers for developers</title>
+<meta name="description" content="Free tiers for developers (hosting, databases, CI, monitoring, auth, email, AI APIs) with the actual limits, each checked against the provider's own pricing page.">
+<meta property="og:title" content="devfree: free tiers for developers">
+<meta property="og:description" content="Search 100 developer free tiers with real, sourced limits.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2316a34a'/%3E%3Ctext x='16' y='22' font-family='system-ui' font-size='17' font-weight='700' text-anchor='middle' fill='white'%3E$0%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f7f7f4;--surface:#fff;--text:#18191b;--muted:#5d6168;--line:#e2e2dc;--accent:#15803d;--accent-ink:#fff;--chip:#ececE6;--focus:#2563eb;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#111312;--surface:#1a1c1b;--text:#e9eae6;--muted:#a0a49d;--line:#2b2e2c;--accent:#4ade80;--accent-ink:#06210f;--chip:#242725;--focus:#60a5fa;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header{padding:40px 0 20px}
+h1{font-size:clamp(28px,5vw,42px);margin:0 0 8px;letter-spacing:-.02em}
+h1 span{color:var(--accent)}
+.lead{color:var(--muted);max-width:720px;margin:0 0 20px;font-size:16px}
+.controls{position:sticky;top:0;z-index:5;background:var(--bg);padding:12px 0;border-bottom:1px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+input[type=search]{flex:1;min-width:220px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font:inherit;font-size:16px}
+select{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);font:inherit}
+input:focus-visible,select:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.toggle{display:inline-flex;align-items:center;gap:6px;color:var(--muted);font-size:14px;cursor:pointer;user-select:none}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:10px 0 2px;scrollbar-width:thin}
+.chip{flex:none;border:0;background:var(--chip);color:var(--text);padding:5px 11px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer;white-space:nowrap}
+.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-ink)}
+.chip small{opacity:.7;margin-left:3px}
+.meta{color:var(--muted);font-size:14px;margin:14px 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-bottom:48px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.card h2{font-size:17px;margin:0;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.card h2 a{color:var(--text);text-decoration:none}
+.card h2 a:hover{text-decoration:underline}
+.cat{font-size:12px;color:var(--muted);font-weight:500;white-space:nowrap}
+.desc{margin:0;color:var(--muted);font-size:14px}
+ul.limits{margin:0;padding-left:18px;font-size:14px}
+ul.limits li{margin:2px 0}
+.note{font-size:13px;color:var(--muted);border-left:3px solid var(--line);padding-left:8px;margin:0}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--muted)}
+.badge.good{color:var(--accent)}
+.foot{margin-top:auto;display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted);padding-top:6px;border-top:1px dashed var(--line)}
+.empty{text-align:center;color:var(--muted);padding:60px 0}
+footer{border-top:1px solid var(--line);color:var(--muted);font-size:13px;padding:24px 0 40px}
+mark{background:color-mix(in srgb,var(--accent) 25%,transparent);color:inherit;border-radius:3px}
+@media (max-width:520px){.grid{grid-template-columns:1fr}.toggle{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>dev<span>free</span></h1>
+  <p class="lead">Free tiers for developers, with the actual limits. Every entry links to the provider's own pricing page and shows when it was last checked.</p>
+</header>
+
+<section class="controls" aria-label="Search and filters">
+  <div class="wrap">
+    <div class="row">
+      <input id="q" type="search" placeholder="Search services, limits or tags (press /)" aria-label="Search" autocomplete="off">
+      <select id="sort" aria-label="Sort">
+        <option value="name">Sort: name</option>
+        <option value="checked">Sort: recently checked</option>
+      </select>
+      <label class="toggle"><input type="checkbox" id="nocard"> No credit card</label>
+      <label class="toggle"><input type="checkbox" id="oss"> Open source</label>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Categories"></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <p class="meta" id="meta" aria-live="polite">Loading…</p>
+  <div class="grid" id="grid"></div>
+  <noscript><p class="empty">This page needs JavaScript. The full list is also in the <a href="https://github.com/Ethos6/devfree#the-list">README on GitHub</a>.</p></noscript>
+</main>
+
+<footer class="wrap">
+  <p>Free tiers change often. Always confirm on the provider's page before relying on one. Spotted something outdated? <a href="https://github.com/Ethos6/devfree/issues/new?template=outdated.yml">Report it</a> or <a href="https://github.com/Ethos6/devfree/blob/main/CONTRIBUTING.md">send a fix</a>.</p>
+  <p>Data: <a href="api/services.json">services.json</a> (CC0) · Code: MIT · <a href="https://github.com/Ethos6/devfree">GitHub</a></p>
+</footer>
+
+<script>
+(async function () {
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  const state = { q: '', cat: '', nocard: false, oss: false, sort: 'name' };
+
+  let services, categories;
+  try {
+    [services, categories] = await Promise.all([
+      fetch('api/services.json').then((r) => r.json()).then((d) => d.services),
+      fetch('api/categories.json').then((r) => r.json()),
+    ]);
+  } catch (e) {
+    $('meta').textContent = 'Could not load the data. Try reloading the page.';
+    return;
+  }
+  const catTitle = Object.fromEntries(categories.map((c) => [c.id, c.title]));
+  services.forEach((s) => {
+    s._hay = [s.name, s.description, catTitle[s.category], ...(s.free_tier || []), ...(s.tags || []), s.notes || ''].join(' ').toLowerCase();
+  });
+
+  // Restore state from the URL so filtered views can be shared.
+  const params = new URLSearchParams(location.hash.slice(1));
+  state.q = params.get('q') || '';
+  state.cat = params.get('cat') || '';
+  state.nocard = params.get('nocard') === '1';
+  state.oss = params.get('oss') === '1';
+  state.sort = params.get('sort') === 'checked' ? 'checked' : 'name';
+  $('q').value = state.q; $('nocard').checked = state.nocard; $('oss').checked = state.oss; $('sort').value = state.sort;
+
+  function renderChips() {
+    const all = [{ id: '', title: 'All', count: services.length }, ...categories.slice().sort((a, b) => a.title.localeCompare(b.title))];
+    $('chips').innerHTML = all.map((c) => `<button class="chip" data-cat="${esc(c.id)}" aria-pressed="${state.cat === c.id}">${esc(c.title)}<small>${c.count}</small></button>`).join('');
+  }
+
+  function highlight(text, terms) {
+    let out = esc(text);
+    for (const t of terms) {
+      if (t.length < 2) continue;
+      out = out.replace(new RegExp(`(${t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi'), '<mark>$1</mark>');
+    }
+    return out;
+  }
+
+  function render() {
+    const terms = state.q.toLowerCase().split(/\s+/).filter(Boolean);
+    let list = services.filter((s) =>
+      (!state.cat || s.category === state.cat) &&
+      (!state.nocard || s.credit_card_required === false) &&
+      (!state.oss || s.open_source) &&
+      terms.every((t) => s._hay.includes(t)));
+    list.sort(state.sort === 'checked'
+      ? (a, b) => b.checked.localeCompare(a.checked) || a.name.localeCompare(b.name)
+      : (a, b) => a.name.localeCompare(b.name));
+
+    $('meta').textContent = `${list.length} of ${services.length} services`;
+    $('grid').innerHTML = list.length ? list.map((s) => {
+      const badges = [];
+      if (s.credit_card_required === false) badges.push('<span class="badge good">No credit card</span>');
+      if (s.credit_card_required === true) badges.push('<span class="badge">Card required</span>');
+      if (s.open_source) badges.push('<span class="badge good">Open source</span>');
+      return `<article class="card">
+        <h2><a href="${esc(s.url)}" rel="noopener">${highlight(s.name, terms)}</a><span class="cat">${esc(catTitle[s.category] || '')}</span></h2>
+        <p class="desc">${highlight(s.description, terms)}</p>
+        <ul class="limits">${s.free_tier.map((l) => `<li>${highlight(l, terms)}</li>`).join('')}</ul>
+        ${s.notes ? `<p class="note">${highlight(s.notes, terms)}</p>` : ''}
+        ${badges.length ? `<div class="badges">${badges.join('')}</div>` : ''}
+        <div class="foot"><a href="${esc(s.pricing_url)}" rel="noopener">Pricing page</a><span title="Date the free tier was last verified">Checked ${esc(s.checked)}</span></div>
+      </article>`;
+    }).join('') : '<p class="empty">No services match. Try a shorter search or clear the filters.</p>';
+
+    const p = new URLSearchParams();
+    if (state.q) p.set('q', state.q);
+    if (state.cat) p.set('cat', state.cat);
+    if (state.nocard) p.set('nocard', '1');
+    if (state.oss) p.set('oss', '1');
+    if (state.sort !== 'name') p.set('sort', state.sort);
+    history.replaceState(null, '', p.toString() ? `#${p}` : location.pathname);
+  }
+
+  $('q').addEventListener('input', (e) => { state.q = e.target.value.trim(); render(); });
+  $('sort').addEventListener('change', (e) => { state.sort = e.target.value; render(); });
+  $('nocard').addEventListener('change', (e) => { state.nocard = e.target.checked; render(); });
+  $('oss').addEventListener('change', (e) => { state.oss = e.target.checked; render(); });
+  $('chips').addEventListener('click', (e) => {
+    const b = e.target.closest('.chip');
+    if (!b) return;
+    state.cat = b.dataset.cat;
+    renderChips();
+    render();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === '/' && document.activeElement !== $('q')) { e.preventDefault(); $('q').focus(); }
+  });
+
+  renderChips();
+  render();
+})();
+</script>
+</body>
+</html>
