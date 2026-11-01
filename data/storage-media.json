@@ -1,0 +1,112 @@
+{
+  "category": "Storage, CDN and media",
+  "description": "Object storage, image/video pipelines and file CDNs.",
+  "services": [
+    {
+      "id": "backblaze-b2",
+      "name": "Backblaze B2",
+      "url": "https://www.backblaze.com/cloud-storage",
+      "pricing_url": "https://www.backblaze.com/cloud-storage/pricing",
+      "description": "S3-compatible object storage with low pricing.",
+      "free_tier": [
+        "First 10 GB of storage always free",
+        "Free egress up to 3x your average monthly storage",
+        "Class A, B and C API calls free; first 2,500 Class D calls per day free"
+      ],
+      "tags": [
+        "s3",
+        "object-storage"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "cloudflare-r2",
+      "name": "Cloudflare R2",
+      "url": "https://www.cloudflare.com/developer-platform/r2/",
+      "pricing_url": "https://developers.cloudflare.com/r2/pricing/",
+      "description": "S3-compatible object storage with no egress fees.",
+      "free_tier": [
+        "10 GB-month storage per month",
+        "1M Class A operations per month",
+        "10M Class B operations per month",
+        "Free egress"
+      ],
+      "notes": "Free tier applies to Standard storage only.",
+      "tags": [
+        "s3",
+        "object-storage"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "cloudinary",
+      "name": "Cloudinary",
+      "url": "https://cloudinary.com",
+      "pricing_url": "https://cloudinary.com/pricing",
+      "description": "Image and video upload, transformation and delivery.",
+      "free_tier": [
+        "25 credits per month (1 credit = 1,000 transformations, 1 GB storage or 1 GB bandwidth)",
+        "3 users, 1 account"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "images",
+        "video",
+        "cdn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "imagekit",
+      "name": "ImageKit",
+      "url": "https://imagekit.io",
+      "pricing_url": "https://imagekit.io/plans/",
+      "description": "Real-time image and video optimization with a media library.",
+      "free_tier": [
+        "20 GB bandwidth per month",
+        "3 GB media library storage",
+        "500 video processing units per month"
+      ],
+      "tags": [
+        "images",
+        "video",
+        "cdn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "jsdelivr",
+      "name": "jsDelivr",
+      "url": "https://www.jsdelivr.com",
+      "pricing_url": "https://www.jsdelivr.com/",
+      "description": "Free CDN for open source files from npm and GitHub.",
+      "free_tier": [
+        "Free CDN for npm and GitHub files",
+        "Free public API for package data and stats"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "cdn",
+        "npm"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "uploadthing",
+      "name": "UploadThing",
+      "url": "https://uploadthing.com",
+      "pricing_url": "https://uploadthing.com/pricing",
+      "description": "File uploads for TypeScript apps.",
+      "free_tier": [
+        "2 GB storage shared across apps",
+        "Unlimited uploads and downloads"
+      ],
+      "tags": [
+        "uploads",
+        "typescript"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

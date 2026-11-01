@@ -1,0 +1,176 @@
+{
+  "category": "Databases",
+  "description": "Managed SQL, NoSQL and key-value stores.",
+  "services": [
+    {
+      "id": "aiven",
+      "name": "Aiven",
+      "url": "https://aiven.io",
+      "pricing_url": "https://aiven.io/pricing",
+      "description": "Managed open source data services with free plans for PostgreSQL, Valkey, Kafka and OpenSearch.",
+      "free_tier": [
+        "Free PostgreSQL: 1 dedicated VM, 1 CPU, 1 GB RAM, 1 GB storage",
+        "Free plans also available for Valkey, Kafka and OpenSearch",
+        "No time limit"
+      ],
+      "notes": "Cloud and region can't be chosen; idle services may be shut down.",
+      "tags": [
+        "postgres",
+        "kafka",
+        "valkey"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "convex",
+      "name": "Convex",
+      "url": "https://www.convex.dev",
+      "pricing_url": "https://www.convex.dev/pricing",
+      "description": "Reactive backend: database, functions and file storage in TypeScript.",
+      "free_tier": [
+        "1M function calls included",
+        "0.5 GB database storage",
+        "1 GB file storage",
+        "1 GB data egress",
+        "1 to 6 developers"
+      ],
+      "tags": [
+        "baas",
+        "typescript",
+        "realtime"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mongodb-atlas",
+      "name": "MongoDB Atlas",
+      "url": "https://www.mongodb.com/atlas",
+      "pricing_url": "https://www.mongodb.com/pricing",
+      "description": "Managed MongoDB with a free-forever shared cluster.",
+      "free_tier": [
+        "Free M0 cluster with 512 MB storage",
+        "Shared RAM and vCPU",
+        "Up to 100 operations per second"
+      ],
+      "tags": [
+        "nosql",
+        "document"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "url": "https://neon.com",
+      "pricing_url": "https://neon.com/pricing",
+      "description": "Serverless Postgres with branching and scale to zero.",
+      "free_tier": [
+        "Up to 100 projects",
+        "100 CU-hours per project per month (autoscaling up to 2 CU)",
+        "1 GB storage per project, 20 GB per account",
+        "10 branches per project",
+        "5 GB public data transfer per project"
+      ],
+      "credit_card_required": false,
+      "notes": "Compute scales to zero after 5 minutes idle on the free plan.",
+      "tags": [
+        "postgres",
+        "serverless"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "prisma-postgres",
+      "name": "Prisma Postgres",
+      "url": "https://www.prisma.io/postgres",
+      "pricing_url": "https://www.prisma.io/pricing",
+      "description": "Managed Postgres designed for use with Prisma ORM.",
+      "free_tier": [
+        "50 databases",
+        "200K operations per month",
+        "2 GB storage"
+      ],
+      "tags": [
+        "postgres",
+        "serverless"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "redis-cloud",
+      "name": "Redis Cloud",
+      "url": "https://redis.io/cloud/",
+      "pricing_url": "https://redis.io/pricing/",
+      "description": "Managed Redis from Redis Ltd.",
+      "free_tier": [
+        "30 MB single database on shared infrastructure",
+        "Best-effort SLA, community support"
+      ],
+      "tags": [
+        "redis"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "url": "https://supabase.com",
+      "pricing_url": "https://supabase.com/pricing",
+      "description": "Postgres with auth, storage, realtime and edge functions.",
+      "free_tier": [
+        "2 active projects",
+        "500 MB database per project",
+        "1 GB file storage",
+        "5 GB egress",
+        "50,000 monthly active users"
+      ],
+      "notes": "Free projects pause after 1 week of inactivity.",
+      "tags": [
+        "postgres",
+        "baas",
+        "auth"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "turso",
+      "name": "Turso",
+      "url": "https://turso.tech",
+      "pricing_url": "https://turso.tech/pricing",
+      "description": "Hosted SQLite (libSQL) with many small databases and embedded replicas.",
+      "free_tier": [
+        "100 databases",
+        "5 GB storage",
+        "500M rows read and 10M rows written per month",
+        "3 GB syncs per month"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "sqlite",
+        "edge"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "upstash-redis",
+      "name": "Upstash Redis",
+      "url": "https://upstash.com",
+      "pricing_url": "https://upstash.com/pricing/redis",
+      "description": "Serverless Redis-compatible store with per-request pricing.",
+      "free_tier": [
+        "1 database",
+        "250 MB data size",
+        "500K commands per month",
+        "10 GB bandwidth per month"
+      ],
+      "tags": [
+        "redis",
+        "serverless"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

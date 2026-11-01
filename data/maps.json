@@ -1,0 +1,41 @@
+{
+  "category": "Maps and location",
+  "description": "Map tiles, SDKs and geocoding.",
+  "services": [
+    {
+      "id": "mapbox",
+      "name": "Mapbox",
+      "url": "https://www.mapbox.com",
+      "pricing_url": "https://www.mapbox.com/pricing",
+      "description": "Maps, navigation and location APIs.",
+      "free_tier": [
+        "50,000 web map loads per month",
+        "25,000 mobile monthly active users",
+        "50,000 Static Images API requests",
+        "100,000 temporary geocoding requests"
+      ],
+      "tags": [
+        "maps",
+        "geocoding"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "maptiler",
+      "name": "MapTiler Cloud",
+      "url": "https://www.maptiler.com",
+      "pricing_url": "https://www.maptiler.com/cloud/pricing/",
+      "description": "Map tiles, styles and geocoding.",
+      "free_tier": [
+        "5K map sessions per month",
+        "100K API requests per month"
+      ],
+      "notes": "Free plan is for non-commercial use and needs the MapTiler logo.",
+      "tags": [
+        "maps",
+        "tiles"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "category": "Documentation hosting",
+  "description": "Hosted docs sites.",
+  "services": [
+    {
+      "id": "gitbook",
+      "name": "GitBook",
+      "url": "https://www.gitbook.com",
+      "pricing_url": "https://www.gitbook.com/pricing",
+      "description": "Docs platform with Git sync.",
+      "free_tier": [
+        "1 free user",
+        "Basic customization"
+      ],
+      "notes": "Custom domains need a paid plan. Free docs program for open source.",
+      "tags": [
+        "docs"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "read-the-docs",
+      "name": "Read the Docs",
+      "url": "https://about.readthedocs.com",
+      "pricing_url": "https://about.readthedocs.com/pricing/",
+      "description": "Docs hosting with automatic builds and versioning.",
+      "free_tier": [
+        "Free for open source (ad-supported)",
+        "Automatic builds, versioning, search and PR previews"
+      ],
+      "tags": [
+        "sphinx",
+        "mkdocs"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "category": "Cloud platforms",
+  "description": "Big clouds with always-free quotas or sign-up credits.",
+  "services": [
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "url": "https://aws.amazon.com",
+      "pricing_url": "https://aws.amazon.com/free/",
+      "description": "New accounts get a credit-based free plan; 30+ services also stay free within monthly limits.",
+      "free_tier": [
+        "Up to $200 in credits for new customers ($100 at sign-up, up to $100 more for exploring services)",
+        "Free plan account lasts up to 6 months or until credits run out",
+        "30+ services are always free within monthly usage limits"
+      ],
+      "tags": [
+        "vm",
+        "serverless"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "google-cloud",
+      "name": "Google Cloud",
+      "url": "https://cloud.google.com",
+      "pricing_url": "https://docs.cloud.google.com/free/docs/free-cloud-features",
+      "description": "Always-free monthly quotas across Compute Engine, Cloud Run, Cloud Storage, BigQuery and Firestore, plus a sign-up credit.",
+      "free_tier": [
+        "1 e2-micro VM per month (us-west1, us-central1 or us-east1) with 30 GB-months standard disk",
+        "Cloud Run: 2M requests, 360,000 GB-seconds and 180,000 vCPU-seconds per month",
+        "Cloud Storage: 5 GB-months regional storage in US regions",
+        "BigQuery: 1 TiB of queries and 10 GiB storage per month",
+        "Firestore: 1 GiB storage, 50K reads / 20K writes / 20K deletes per day",
+        "New accounts: $300 credit valid for 90 days"
+      ],
+      "notes": "Google may change free tier limits with 30 days' notice.",
+      "tags": [
+        "vm",
+        "serverless",
+        "bigquery"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "url": "https://azure.microsoft.com",
+      "pricing_url": "https://azure.microsoft.com/en-us/pricing/free-services",
+      "description": "Sign-up credit, 12 months of popular services and 65+ always-free services.",
+      "free_tier": [
+        "$200 credit to use in the first 30 days",
+        "Free monthly amounts of popular services for 12 months (new customers only)",
+        "65+ services with free monthly amounts for as long as you have an account"
+      ],
+      "notes": "Move to pay-as-you-go within 30 days to keep the 12-month services.",
+      "tags": [
+        "vm",
+        "serverless"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "oracle-cloud",
+      "name": "Oracle Cloud Free Tier",
+      "url": "https://www.oracle.com/cloud/",
+      "pricing_url": "https://www.oracle.com/cloud/free/",
+      "description": "Always Free resources including Arm (Ampere A1) and AMD compute, block and object storage and Autonomous Database.",
+      "free_tier": [
+        "Always Free: Arm-based Ampere A1 compute and AMD-based compute",
+        "Always Free: Block Volume and Object Storage",
+        "Always Free: Autonomous Database (Data Warehouse, Transaction Processing, JSON)"
+      ],
+      "credit_card_required": true,
+      "notes": "See Oracle's Always Free documentation for exact shapes and quotas.",
+      "tags": [
+        "vm",
+        "arm"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

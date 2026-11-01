@@ -1,0 +1,105 @@
+{
+  "category": "Email",
+  "description": "Transactional email APIs, SMTP and email testing.",
+  "services": [
+    {
+      "id": "brevo",
+      "name": "Brevo",
+      "url": "https://www.brevo.com",
+      "pricing_url": "https://www.brevo.com/pricing/",
+      "description": "Email marketing and transactional email (formerly Sendinblue).",
+      "free_tier": [
+        "Up to 300 emails per day"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "transactional",
+        "marketing"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mailersend",
+      "name": "MailerSend",
+      "url": "https://www.mailersend.com",
+      "pricing_url": "https://www.mailersend.com/pricing",
+      "description": "Transactional email API and SMTP.",
+      "free_tier": [
+        "500 emails per month",
+        "1 domain",
+        "100 API requests per day"
+      ],
+      "tags": [
+        "transactional",
+        "api"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mailjet",
+      "name": "Mailjet",
+      "url": "https://www.mailjet.com",
+      "pricing_url": "https://www.mailjet.com/pricing/",
+      "description": "Email API and marketing email.",
+      "free_tier": [
+        "6,000 emails per month",
+        "200 emails per day",
+        "1,000 contacts"
+      ],
+      "tags": [
+        "transactional",
+        "marketing"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mailtrap",
+      "name": "Mailtrap",
+      "url": "https://mailtrap.io",
+      "pricing_url": "https://mailtrap.io/pricing/",
+      "description": "Email sending plus a sandbox for testing emails.",
+      "free_tier": [
+        "Sending: 4,000 emails per month, 150 per day",
+        "Testing: 1 sandbox, 50 test emails per month"
+      ],
+      "tags": [
+        "transactional",
+        "testing"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "postmark",
+      "name": "Postmark",
+      "url": "https://postmarkapp.com",
+      "pricing_url": "https://postmarkapp.com/pricing",
+      "description": "Transactional email with fast delivery.",
+      "free_tier": [
+        "100 emails per month on the Developer plan",
+        "Never expires"
+      ],
+      "tags": [
+        "transactional"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "resend",
+      "name": "Resend",
+      "url": "https://resend.com",
+      "pricing_url": "https://resend.com/pricing",
+      "description": "Email API for developers, with React Email.",
+      "free_tier": [
+        "3,000 emails per month",
+        "100 emails per day",
+        "3 domains",
+        "30-day data retention"
+      ],
+      "tags": [
+        "transactional",
+        "api"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

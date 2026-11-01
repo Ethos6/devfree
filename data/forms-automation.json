@@ -1,0 +1,53 @@
+{
+  "category": "Forms and automation",
+  "description": "Form backends and workflow automation.",
+  "services": [
+    {
+      "id": "formspree",
+      "name": "Formspree",
+      "url": "https://formspree.io",
+      "pricing_url": "https://formspree.io/plans",
+      "description": "Form backend for static sites.",
+      "free_tier": [
+        "50 submissions per month",
+        "Unlimited forms",
+        "30-day submission archive"
+      ],
+      "tags": [
+        "forms"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "tally",
+      "name": "Tally",
+      "url": "https://tally.so",
+      "pricing_url": "https://tally.so/pricing",
+      "description": "Form builder.",
+      "free_tier": [
+        "Unlimited forms and submissions (fair use)",
+        "File uploads up to 10 MB each"
+      ],
+      "tags": [
+        "forms"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "url": "https://zapier.com",
+      "pricing_url": "https://zapier.com/pricing",
+      "description": "No-code workflow automation.",
+      "free_tier": [
+        "100 tasks per month",
+        "Two-step Zaps",
+        "15-minute update time"
+      ],
+      "tags": [
+        "automation"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

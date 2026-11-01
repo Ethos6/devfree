@@ -1,0 +1,23 @@
+{
+  "category": "Search",
+  "description": "Hosted search APIs.",
+  "services": [
+    {
+      "id": "algolia",
+      "name": "Algolia",
+      "url": "https://www.algolia.com",
+      "pricing_url": "https://www.algolia.com/pricing/",
+      "description": "Hosted search and recommendations API.",
+      "free_tier": [
+        "10K search requests per month",
+        "50K records",
+        "5K recommendation requests per month",
+        "5K crawls per month"
+      ],
+      "tags": [
+        "search-api"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

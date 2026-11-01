@@ -1,0 +1,74 @@
+{
+  "category": "Realtime, queues and notifications",
+  "description": "WebSockets, pub/sub, message queues and notification infrastructure.",
+  "services": [
+    {
+      "id": "ably",
+      "name": "Ably",
+      "url": "https://ably.com",
+      "pricing_url": "https://ably.com/pricing",
+      "description": "Realtime messaging, presence and pub/sub.",
+      "free_tier": [
+        "6M messages per month",
+        "200 concurrent connections",
+        "200 concurrent channels",
+        "500 messages per second"
+      ],
+      "tags": [
+        "websockets",
+        "pubsub"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "novu",
+      "name": "Novu",
+      "url": "https://novu.co",
+      "pricing_url": "https://novu.co/pricing/",
+      "description": "Notification infrastructure: email, in-app, SMS, chat and push.",
+      "free_tier": [
+        "10,000 workflow runs per month",
+        "All channels",
+        "24-hour activity feed retention"
+      ],
+      "tags": [
+        "notifications"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "pusher",
+      "name": "Pusher Channels",
+      "url": "https://pusher.com/channels",
+      "pricing_url": "https://pusher.com/channels/pricing/",
+      "description": "Hosted WebSocket pub/sub.",
+      "free_tier": [
+        "200,000 messages per day",
+        "100 concurrent connections"
+      ],
+      "tags": [
+        "websockets",
+        "pubsub"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "upstash-qstash",
+      "name": "Upstash QStash",
+      "url": "https://upstash.com/docs/qstash",
+      "pricing_url": "https://upstash.com/pricing/qstash",
+      "description": "HTTP-based message queue and scheduler for serverless.",
+      "free_tier": [
+        "1,000 messages per day",
+        "1 MB max message size",
+        "3-day log and DLQ retention"
+      ],
+      "tags": [
+        "queue",
+        "cron"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

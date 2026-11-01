@@ -1,0 +1,90 @@
+{
+  "category": "Security and code quality",
+  "description": "Dependency scanning, secret detection, static analysis, coverage and certificates.",
+  "services": [
+    {
+      "id": "codecov",
+      "name": "Codecov",
+      "url": "https://about.codecov.io",
+      "pricing_url": "https://about.codecov.io/pricing/",
+      "description": "Code coverage reports on pull requests.",
+      "free_tier": [
+        "Unlimited uploads for public repositories",
+        "Up to 250 coverage uploads per month for private repos on the Developer plan"
+      ],
+      "tags": [
+        "coverage"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gitguardian",
+      "name": "GitGuardian",
+      "url": "https://www.gitguardian.com",
+      "pricing_url": "https://www.gitguardian.com/pricing",
+      "description": "Secrets detection in code and CI.",
+      "free_tier": [
+        "Up to 25 developers",
+        "Real-time secrets scanning",
+        "10K API calls per month"
+      ],
+      "tags": [
+        "secrets"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "lets-encrypt",
+      "name": "Let's Encrypt",
+      "url": "https://letsencrypt.org",
+      "pricing_url": "https://letsencrypt.org/about/",
+      "description": "Free, automated TLS certificates from a non-profit CA.",
+      "free_tier": [
+        "Free trusted TLS certificates for any domain you control",
+        "Automatic issuance and renewal (ACME, RFC 8555)"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "tls",
+        "certificates"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "snyk",
+      "name": "Snyk",
+      "url": "https://snyk.io",
+      "pricing_url": "https://snyk.io/plans/",
+      "description": "Scanning for dependencies, code, containers and infrastructure as code.",
+      "free_tier": [
+        "Open Source: 200 tests",
+        "Code: 100 tests per month",
+        "Container: 100 tests",
+        "IaC: 300 tests"
+      ],
+      "tags": [
+        "sca",
+        "sast"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "sonarqube-cloud",
+      "name": "SonarQube Cloud",
+      "url": "https://www.sonarsource.com/products/sonarcloud/",
+      "pricing_url": "https://www.sonarsource.com/plans-and-pricing/sonarcloud/",
+      "description": "Static analysis for code quality and security (formerly SonarCloud).",
+      "free_tier": [
+        "Free for private projects up to 50k lines of code",
+        "Public OSI-licensed repos get the OSS plan with Pro features"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "sast",
+        "quality"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

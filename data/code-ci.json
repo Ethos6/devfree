@@ -1,0 +1,133 @@
+{
+  "category": "Code hosting and CI/CD",
+  "description": "Git hosting, build minutes, registries and cloud dev environments.",
+  "services": [
+    {
+      "id": "bitbucket",
+      "name": "Bitbucket",
+      "url": "https://bitbucket.org",
+      "pricing_url": "https://www.atlassian.com/software/bitbucket/pricing",
+      "description": "Git hosting from Atlassian with Pipelines CI.",
+      "free_tier": [
+        "Up to 5 users",
+        "Unlimited public and private repositories",
+        "50 build minutes",
+        "1 GB Git LFS storage"
+      ],
+      "tags": [
+        "git",
+        "ci"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "circleci",
+      "name": "CircleCI",
+      "url": "https://circleci.com",
+      "pricing_url": "https://circleci.com/pricing/",
+      "description": "Hosted CI/CD with Docker, Linux, macOS and Windows executors.",
+      "free_tier": [
+        "30,000 credits per month (up to 6,000 build minutes on small Docker)",
+        "30 concurrent jobs",
+        "Up to 5 active users",
+        "2 GB storage"
+      ],
+      "tags": [
+        "ci"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "codeberg",
+      "name": "Codeberg",
+      "url": "https://codeberg.org",
+      "pricing_url": "https://docs.codeberg.org/getting-started/faq/",
+      "description": "Non-profit Git hosting for free and open source projects, built on Forgejo.",
+      "free_tier": [
+        "Free for free/libre software projects",
+        "Woodpecker CI available on request",
+        "Up to 100 MB private content for contributors to free/libre projects"
+      ],
+      "credit_card_required": false,
+      "notes": "Request resources before using more than 750 MiB Git storage.",
+      "tags": [
+        "git",
+        "ci"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "docker-hub",
+      "name": "Docker Hub",
+      "url": "https://hub.docker.com",
+      "pricing_url": "https://www.docker.com/pricing/",
+      "description": "Container image registry from Docker.",
+      "free_tier": [
+        "1 private repository",
+        "100 pulls per hour per user when logged in",
+        "1 Docker Scout-enabled repository"
+      ],
+      "notes": "Personal plan is for individual use.",
+      "tags": [
+        "containers",
+        "registry"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "url": "https://github.com",
+      "pricing_url": "https://github.com/pricing",
+      "description": "Git hosting with Actions, Packages, Codespaces and Copilot Free.",
+      "free_tier": [
+        "Unlimited public and private repositories",
+        "2,000 Actions minutes per month for private repos (public repos free)",
+        "500 MB Packages storage (free for public repos)",
+        "Copilot Free: up to 2,000 completions per month"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "git",
+        "ci"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "github-codespaces",
+      "name": "GitHub Codespaces",
+      "url": "https://github.com/features/codespaces",
+      "pricing_url": "https://docs.github.com/en/billing/concepts/product-billing/github-codespaces",
+      "description": "Cloud dev environments that open from any repository.",
+      "free_tier": [
+        "120 core hours per month for personal accounts",
+        "15 GB-month storage"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "ide",
+        "cloud-dev"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "url": "https://gitlab.com",
+      "pricing_url": "https://about.gitlab.com/pricing/",
+      "description": "Git hosting with built-in CI/CD.",
+      "free_tier": [
+        "5 users per private top-level group",
+        "10 GiB storage",
+        "400 compute minutes per month"
+      ],
+      "tags": [
+        "git",
+        "ci"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "category": "Collaboration and project management",
+  "description": "Issue tracking, docs, design and team chat.",
+  "services": [
+    {
+      "id": "figma",
+      "name": "Figma",
+      "url": "https://www.figma.com",
+      "pricing_url": "https://www.figma.com/pricing/",
+      "description": "Collaborative interface design.",
+      "free_tier": [
+        "Always free for individuals",
+        "3 projects",
+        "30-day version history"
+      ],
+      "tags": [
+        "design"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "url": "https://linear.app",
+      "pricing_url": "https://linear.app/pricing",
+      "description": "Issue tracking and project planning.",
+      "free_tier": [
+        "Unlimited members",
+        "250 issues",
+        "2 teams",
+        "10 MB file uploads"
+      ],
+      "tags": [
+        "issues"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "miro",
+      "name": "Miro",
+      "url": "https://miro.com",
+      "pricing_url": "https://miro.com/pricing/",
+      "description": "Online whiteboard.",
+      "free_tier": [
+        "3 editable boards",
+        "Unlimited team members",
+        "7,000+ templates"
+      ],
+      "tags": [
+        "whiteboard"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "url": "https://www.notion.com",
+      "pricing_url": "https://www.notion.com/pricing",
+      "description": "Docs, wikis and project databases.",
+      "free_tier": [
+        "Unlimited pages and blocks for individuals",
+        "5 MB file uploads",
+        "10 guests",
+        "7-day page history"
+      ],
+      "tags": [
+        "docs",
+        "wiki"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "url": "https://slack.com",
+      "pricing_url": "https://slack.com/pricing",
+      "description": "Team chat.",
+      "free_tier": [
+        "90 days of message and file history",
+        "Up to 10 apps",
+        "1:1 huddles"
+      ],
+      "tags": [
+        "chat"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "trello",
+      "name": "Trello",
+      "url": "https://trello.com",
+      "pricing_url": "https://trello.com/pricing",
+      "description": "Kanban boards from Atlassian.",
+      "free_tier": [
+        "Up to 10 collaborators per workspace",
+        "Up to 10 boards per workspace",
+        "Unlimited cards",
+        "250 automation runs per month"
+      ],
+      "tags": [
+        "kanban"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

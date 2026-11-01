@@ -1,0 +1,96 @@
+{
+  "category": "Analytics and product insights",
+  "description": "Product analytics, web analytics and session replay.",
+  "services": [
+    {
+      "id": "amplitude",
+      "name": "Amplitude",
+      "url": "https://amplitude.com",
+      "pricing_url": "https://amplitude.com/pricing",
+      "description": "Product analytics, experimentation and session replay.",
+      "free_tier": [
+        "2M events per month",
+        "10K session replays per month",
+        "Unlimited feature flags"
+      ],
+      "tags": [
+        "product-analytics"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "microsoft-clarity",
+      "name": "Microsoft Clarity",
+      "url": "https://clarity.microsoft.com",
+      "pricing_url": "https://clarity.microsoft.com/",
+      "description": "Session recordings and heatmaps.",
+      "free_tier": [
+        "Free forever",
+        "No traffic limits"
+      ],
+      "tags": [
+        "heatmaps",
+        "session-replay"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mixpanel",
+      "name": "Mixpanel",
+      "url": "https://mixpanel.com",
+      "pricing_url": "https://mixpanel.com/pricing/",
+      "description": "Product analytics.",
+      "free_tier": [
+        "Up to 1M events per month",
+        "10K session replays per month (30-day retention)",
+        "5 saved reports per seat"
+      ],
+      "tags": [
+        "product-analytics"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "posthog",
+      "name": "PostHog",
+      "url": "https://posthog.com",
+      "pricing_url": "https://posthog.com/pricing",
+      "description": "Product analytics, session replay, feature flags, surveys and error tracking in one tool.",
+      "free_tier": [
+        "1M events per month",
+        "5K session recordings per month",
+        "1M feature flag requests per month",
+        "1,500 survey responses",
+        "100K exceptions",
+        "1-year event retention"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "product-analytics",
+        "session-replay",
+        "feature-flags"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "umami",
+      "name": "Umami Cloud",
+      "url": "https://umami.is",
+      "pricing_url": "https://umami.is/pricing",
+      "description": "Privacy-focused, cookie-free web analytics.",
+      "free_tier": [
+        "100K events per month",
+        "1 website",
+        "6-month data retention"
+      ],
+      "notes": "Self-hosting is always free.",
+      "tags": [
+        "web-analytics",
+        "privacy"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "category": "Developer tools",
+  "description": "API clients, browser IDEs and testing services.",
+  "services": [
+    {
+      "id": "browserstack-oss",
+      "name": "BrowserStack for Open Source",
+      "url": "https://www.browserstack.com",
+      "pricing_url": "https://www.browserstack.com/open-source",
+      "description": "Real-browser and device testing, free for approved open source projects.",
+      "free_tier": [
+        "Unlimited testing on Live, Automate and Percy",
+        "3,500+ browsers and devices",
+        "5 users and 5 parallels"
+      ],
+      "notes": "Apply with your project details.",
+      "tags": [
+        "testing",
+        "browsers"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "cypress-cloud",
+      "name": "Cypress Cloud",
+      "url": "https://www.cypress.io",
+      "pricing_url": "https://www.cypress.io/pricing",
+      "description": "Dashboard for Cypress test runs; the Cypress app itself is open source.",
+      "free_tier": [
+        "500 test results per month",
+        "10 users",
+        "30-day retention"
+      ],
+      "tags": [
+        "testing",
+        "e2e"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "url": "https://hoppscotch.com",
+      "pricing_url": "https://hoppscotch.com/pricing",
+      "description": "Open source API client for REST, GraphQL and realtime APIs.",
+      "free_tier": [
+        "Free forever plan",
+        "1 personal workspace",
+        "Collections, environments and collection runner"
+      ],
+      "tags": [
+        "api-client"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "url": "https://www.postman.com",
+      "pricing_url": "https://www.postman.com/pricing/",
+      "description": "API client, testing and mock servers.",
+      "free_tier": [
+        "1 user",
+        "Collection runner",
+        "1,000 monitoring requests per month",
+        "10,000 Postman API calls per month",
+        "Up to 5 integrations"
+      ],
+      "tags": [
+        "api-client"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "stackblitz",
+      "name": "StackBlitz",
+      "url": "https://stackblitz.com",
+      "pricing_url": "https://stackblitz.com/pricing",
+      "description": "In-browser development environment powered by WebContainers.",
+      "free_tier": [
+        "Unlimited public projects and GitHub repositories"
+      ],
+      "tags": [
+        "ide",
+        "browser"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

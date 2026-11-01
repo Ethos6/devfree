@@ -1,0 +1,61 @@
+{
+  "category": "Networking, CDN and tunnels",
+  "description": "DNS, CDN, DDoS protection, tunnels and private networks.",
+  "services": [
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "url": "https://www.cloudflare.com",
+      "pricing_url": "https://www.cloudflare.com/plans/",
+      "description": "CDN, DNS and security in front of your site.",
+      "free_tier": [
+        "Unmetered DDoS protection",
+        "Global CDN",
+        "Universal SSL certificate",
+        "DNS",
+        "WAF with free managed ruleset"
+      ],
+      "tags": [
+        "cdn",
+        "dns",
+        "ddos"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "ngrok",
+      "name": "ngrok",
+      "url": "https://ngrok.com",
+      "pricing_url": "https://ngrok.com/pricing",
+      "description": "Expose local servers to the internet through secure tunnels.",
+      "free_tier": [
+        "3 online endpoints",
+        "1 GB data transfer",
+        "20K HTTP/S requests",
+        "Assigned dev domain"
+      ],
+      "notes": "Free HTTP/S endpoints show an interstitial page.",
+      "tags": [
+        "tunnel"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "url": "https://tailscale.com",
+      "pricing_url": "https://tailscale.com/pricing",
+      "description": "WireGuard-based private network (mesh VPN).",
+      "free_tier": [
+        "Up to 6 users",
+        "Unlimited user devices",
+        "Nearly all features"
+      ],
+      "tags": [
+        "vpn",
+        "wireguard"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

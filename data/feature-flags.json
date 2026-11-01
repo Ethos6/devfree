@@ -1,0 +1,58 @@
+{
+  "category": "Feature flags",
+  "description": "Flags, rollouts and experiments.",
+  "services": [
+    {
+      "id": "configcat",
+      "name": "ConfigCat",
+      "url": "https://configcat.com",
+      "pricing_url": "https://configcat.com/pricing/",
+      "description": "Feature flag and remote config service.",
+      "free_tier": [
+        "10 feature flags",
+        "5 million config downloads per month",
+        "2 environments",
+        "Unlimited team members"
+      ],
+      "tags": [
+        "remote-config"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "flagsmith",
+      "name": "Flagsmith",
+      "url": "https://www.flagsmith.com",
+      "pricing_url": "https://www.flagsmith.com/pricing",
+      "description": "Feature flags and remote config.",
+      "free_tier": [
+        "50,000 requests per month",
+        "1 team member",
+        "1 project"
+      ],
+      "tags": [
+        "remote-config"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "growthbook",
+      "name": "GrowthBook",
+      "url": "https://www.growthbook.io",
+      "pricing_url": "https://www.growthbook.io/pricing",
+      "description": "Feature flags and A/B testing.",
+      "free_tier": [
+        "Up to 3 users (cloud)",
+        "Unlimited feature flags and experiments",
+        "1M CDN requests per month"
+      ],
+      "notes": "Self-hosted open source edition is free.",
+      "tags": [
+        "experiments"
+      ],
+      "open_source": true,
+      "checked": "2026-11-01"
+    }
+  ]
+}

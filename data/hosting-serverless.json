@@ -1,0 +1,152 @@
+{
+  "category": "Hosting and serverless",
+  "description": "Static sites, edge functions and app hosting.",
+  "services": [
+    {
+      "id": "cloudflare-pages",
+      "name": "Cloudflare Pages",
+      "url": "https://pages.cloudflare.com",
+      "pricing_url": "https://developers.cloudflare.com/pages/platform/limits/",
+      "description": "Static and full-stack site hosting on Cloudflare's network.",
+      "free_tier": [
+        "500 builds per month, 1 concurrent build",
+        "Up to 100 projects",
+        "20,000 files per site, 25 MiB per file",
+        "100 custom domains per project"
+      ],
+      "tags": [
+        "static",
+        "edge"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "cloudflare-workers",
+      "name": "Cloudflare Workers",
+      "url": "https://workers.cloudflare.com",
+      "pricing_url": "https://developers.cloudflare.com/workers/platform/pricing/",
+      "description": "Serverless functions at the edge, with KV and D1 storage on the free plan.",
+      "free_tier": [
+        "100,000 requests per day, 10 ms CPU per invocation",
+        "Workers KV: 100,000 reads and 1,000 writes per day, 1 GB stored",
+        "D1 (SQLite): 5M rows read and 100,000 rows written per day, 5 GB total"
+      ],
+      "tags": [
+        "edge",
+        "functions",
+        "sqlite"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "deno-deploy",
+      "name": "Deno Deploy",
+      "url": "https://deno.com/deploy",
+      "pricing_url": "https://deno.com/deploy/pricing",
+      "description": "Serverless JavaScript and TypeScript hosting on V8 isolates.",
+      "free_tier": [
+        "1M requests per month",
+        "20 GiB egress per month",
+        "10 hours active CPU",
+        "1 GiB KV storage"
+      ],
+      "tags": [
+        "edge",
+        "typescript"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "firebase",
+      "name": "Firebase (Spark plan)",
+      "url": "https://firebase.google.com",
+      "pricing_url": "https://firebase.google.com/pricing",
+      "description": "Google's app platform: hosting, auth, Firestore, Realtime Database and storage on the no-cost Spark plan.",
+      "free_tier": [
+        "Hosting: 10 GB storage and 360 MB/day transfer",
+        "Authentication: 50K monthly active users",
+        "Firestore: 1 GiB storage, 50K reads / 20K writes / 20K deletes per day",
+        "Realtime Database: 1 GB storage, 100 simultaneous connections"
+      ],
+      "tags": [
+        "baas",
+        "hosting",
+        "auth"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "github-pages",
+      "name": "GitHub Pages",
+      "url": "https://pages.github.com",
+      "pricing_url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+      "description": "Static site hosting straight from a GitHub repository.",
+      "free_tier": [
+        "Free for public repositories on GitHub Free",
+        "Published sites up to 1 GB",
+        "Soft limit of 100 GB bandwidth per month",
+        "Soft limit of 10 builds per hour (not applied to custom Actions workflows)"
+      ],
+      "credit_card_required": false,
+      "tags": [
+        "static"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "url": "https://www.netlify.com",
+      "pricing_url": "https://www.netlify.com/pricing/",
+      "description": "Git-based hosting for static sites and web apps with functions and forms.",
+      "free_tier": [
+        "300 credits per month (bandwidth is billed at 20 credits per GB)",
+        "1 concurrent build",
+        "Hard monthly limits: you are never charged on the free plan"
+      ],
+      "tags": [
+        "static",
+        "functions"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "render",
+      "name": "Render",
+      "url": "https://render.com",
+      "pricing_url": "https://render.com/pricing",
+      "description": "App platform with free web services, static sites, Postgres and Key Value.",
+      "free_tier": [
+        "Free web service instance with 512 MB RAM (usage limits apply)",
+        "Static sites are always free",
+        "Free Postgres instance (256 MB RAM)",
+        "Free Key Value instance (25 MB RAM)"
+      ],
+      "notes": "See render.com/docs/free for spin-down and expiry rules.",
+      "tags": [
+        "paas",
+        "postgres"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com",
+      "pricing_url": "https://vercel.com/pricing",
+      "description": "Frontend and full-stack hosting with Git deploys, previews and serverless functions.",
+      "free_tier": [
+        "100 GB Fast Data Transfer per month",
+        "1M function invocations per month",
+        "4 hours Active CPU per month"
+      ],
+      "notes": "Hobby plan is for personal, non-commercial use.",
+      "tags": [
+        "static",
+        "nextjs",
+        "functions"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}

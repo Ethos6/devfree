@@ -1,0 +1,84 @@
+{
+  "category": "AI and ML APIs",
+  "description": "Free access to model APIs and ML hosting.",
+  "services": [
+    {
+      "id": "workers-ai",
+      "name": "Cloudflare Workers AI",
+      "url": "https://developers.cloudflare.com/workers-ai/",
+      "pricing_url": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "description": "Run open models on Cloudflare's GPUs from Workers.",
+      "free_tier": [
+        "10,000 Neurons per day free on Workers Free and Paid"
+      ],
+      "tags": [
+        "llm",
+        "inference"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gemini-api",
+      "name": "Google Gemini API",
+      "url": "https://ai.google.dev",
+      "pricing_url": "https://ai.google.dev/gemini-api/docs/pricing",
+      "description": "Gemini model API with a free tier via Google AI Studio.",
+      "free_tier": [
+        "Free input and output tokens on selected Flash and Flash-Lite models",
+        "Google AI Studio access"
+      ],
+      "notes": "Free-tier content may be used to improve Google's products.",
+      "tags": [
+        "llm"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "groq",
+      "name": "Groq",
+      "url": "https://groq.com",
+      "pricing_url": "https://console.groq.com/docs/rate-limits",
+      "description": "Fast LLM inference API.",
+      "free_tier": [
+        "Example free limits: 30 requests/min, 1K requests/day, 8K tokens/min (gpt-oss-120b)"
+      ],
+      "notes": "Exact limits vary by model; see your organization's limits page.",
+      "tags": [
+        "llm"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "hugging-face",
+      "name": "Hugging Face",
+      "url": "https://huggingface.co",
+      "pricing_url": "https://huggingface.co/pricing",
+      "description": "Model and dataset hub with Spaces for hosting ML demos.",
+      "free_tier": [
+        "Free CPU Basic hardware for Spaces (2 vCPU, 16 GB RAM)"
+      ],
+      "tags": [
+        "models",
+        "datasets",
+        "spaces"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "url": "https://openrouter.ai",
+      "pricing_url": "https://openrouter.ai/docs/api-reference/limits",
+      "description": "One API for many LLM providers, including free model variants.",
+      "free_tier": [
+        "Free models (':free'): 20 requests per minute",
+        "50 requests per day (1,000 per day after buying at least 10 credits)"
+      ],
+      "tags": [
+        "llm",
+        "gateway"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}
