@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ethos6/devfree/schema.json",
+  "title": "devfree category file",
+  "type": "object",
+  "required": ["category", "description", "services"],
+  "additionalProperties": false,
+  "properties": {
+    "category": { "type": "string", "description": "Human-readable category title." },
+    "description": { "type": "string" },
+    "services": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "url", "pricing_url", "description", "free_tier", "checked"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$", "description": "Unique, stable identifier." },
+          "name": { "type": "string", "maxLength": 60 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "pricing_url": { "type": "string", "format": "uri", "pattern": "^https://", "description": "Official page that states the free tier." },
+          "description": { "type": "string", "maxLength": 160, "description": "What the service does, in one sentence." },
+          "free_tier": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "maxLength": 140 },
+            "description": "The free plan's limits, as stated on the pricing page."
+          },
+          "credit_card_required": { "type": "boolean", "description": "Omit when the provider doesn't say." },
+          "notes": { "type": "string", "maxLength": 200, "description": "Important conditions, e.g. non-commercial use only." },
+          "tags": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" } },
+          "open_source": { "type": "boolean", "description": "true if the product itself is open source." },
+          "checked": { "type": "string", "format": "date", "description": "Date the free tier was last verified (YYYY-MM-DD)." }
+        }
+      }
+    }
+  }
+}

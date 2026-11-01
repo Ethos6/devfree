@@ -1,0 +1,5 @@
+node_modules/
+site/api/
+*.log
+report.md
+link-report.md

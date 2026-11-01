@@ -1,0 +1,19 @@
+{
+  "name": "devfree",
+  "private": true,
+  "description": "Free tiers for developers, checked against each provider's own pricing page.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "format": "node scripts/format.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/validate.mjs && node scripts/build.mjs --check",
+    "links": "node scripts/check-links.mjs",
+    "stale": "node scripts/stale.mjs",
+    "serve": "npx --yes serve site"
+  }
+}
