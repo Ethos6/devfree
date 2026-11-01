@@ -1,0 +1,35 @@
+name: Suggest a service
+description: Suggest a service with a permanent free tier.
+labels: [suggestion]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Service name and website
+    validations:
+      required: true
+  - type: input
+    id: pricing
+    attributes:
+      label: Official page that states the free tier
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Free tier limits
+      description: Copy the limits as the provider states them.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Checklist
+      options:
+        - label: The free tier is permanent, not a time-limited trial.
+          required: true
+        - label: It's a hosted service useful to developers (not a self-hosted download).
+          required: true
+        - label: I'm not affiliated with the service, or I've said so above.
+          required: false

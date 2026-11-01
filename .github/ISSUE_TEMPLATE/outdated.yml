@@ -1,0 +1,25 @@
+name: Report outdated or wrong info
+description: A free tier changed, a limit is wrong, or a service closed.
+labels: [outdated]
+body:
+  - type: input
+    id: service
+    attributes:
+      label: Service
+      placeholder: e.g. Neon
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed?
+      description: What the list says, and what the provider says now.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Link to the official page
+      placeholder: https://
+    validations:
+      required: true
